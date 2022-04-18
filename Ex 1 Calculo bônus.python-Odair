@@ -1,0 +1,364 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled1.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "toc_visible": true,
+      "authorship_tag": "ABX9TyNQaLZ6dZh0Pswn6/IS2y7y",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Odairjjr/Repositorio_M_Entregas_Python/blob/main/Ex%201%20Calculo%20b%C3%B4nus.python-Odair\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3iPBk7k7wXPW",
+        "outputId": "5dbf6ad3-747c-45ec-fc74-5130d8bedb8f"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Aprovado\n"
+          ]
+        }
+      ],
+      "source": [
+        "nota=8.9\n",
+        "\n",
+        "if nota>=7:\n",
+        "  print('Aprovado')\n",
+        "else:\n",
+        "  print('Não aprovado')"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nota=3\n",
+        "\n",
+        "if nota>=7:\n",
+        "  print('Aprovado')\n",
+        "else:\n",
+        "  if nota>=5:\n",
+        "    print('Não aprovado/Recuperação')\n",
+        "  else:\n",
+        "    print('Não Aprovado/Reprovado direto')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DeDyqxlyynNO",
+        "outputId": "67570bbc-7f7a-4820-8d2d-8c487f3c67ce"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Não Aprovado/Reprovado direto\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "faturamento=input('Qual foi o faturamento da loja nesse mês?')\n",
+        "custo=input('Qual foi o custo da loja nesse mês?')\n",
+        "\n",
+        "if faturamento!=\"\" and custo!=\"\":\n",
+        "  lucro=int(faturamento)-int(custo)\n",
+        "  print(\"O lucro da loja foi de {} reais\".format(lucro))\n",
+        "else:\n",
+        "  print('Algum valor não foi fornecido')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YoE6cmTEzpnv",
+        "outputId": "d7909b03-5e2b-417b-af07-fc22ebf71b29"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Qual foi o faturamento da loja nesse mês?50\n",
+            "Qual foi o custo da loja nesse mês?80\n",
+            "O lucro da loja foi de -30 reais\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "meta=20000\n",
+        "vendas= 25000\n",
+        "\n",
+        "if vendas<meta:\n",
+        "  print('Não ganhou bônus')\n",
+        "elif vendas>(meta*2):\n",
+        "  bonus=0.07*vendas\n",
+        "  print('Ganhou {} de bônus'.format(bonus))\n",
+        "else:\n",
+        "  bonus=0.03*vendas\n",
+        "  print('Ganhou {} de bônus'.format(bonus))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cn-70Ikq1ul-",
+        "outputId": "0a52becc-4b95-4da3-b1aa-6ef73481812f"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ganhou 750.0 de bônus\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "faturamento=200\n",
+        "custo=200\n",
+        "#igual(==)\n",
+        "\n",
+        "if faturamento==custo:\n",
+        "  print('Igual')\n",
+        "else:\n",
+        "  print('Não é igual')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kjANGMWt4Sme",
+        "outputId": "8641ecaa-feb5-4ae2-88a4-3a14891ca18e"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Igual\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "faturamento=100\n",
+        "custo=200\n",
+        "#Diferente(!=)\n",
+        "\n",
+        "if faturamento!=custo:\n",
+        "  print('é diferente')\n",
+        "else:\n",
+        "  print('Não é diferente')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JHpmiwhR4o26",
+        "outputId": "98bd3da8-0437-41ae-e045-d1d6cf06d161"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "é diferente\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print('Programa 3')\n",
+        "email_usuario=input('Insira seu e-mail:')\n",
+        "\n",
+        "if not '@' in email_usuario:\n",
+        "  print('Email Inválido')\n",
+        "else:\n",
+        "  pass"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ic75tpsf44sv",
+        "outputId": "fac2d786-1fc1-426f-c5ab-9f6f7a687686"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Programa 3\n",
+            "Insira seu e-mail:odair\n",
+            "Email Inválido\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#and\n",
+        "\n",
+        "metafuncionario=10000\n",
+        "metaloja=250000\n",
+        "vendasfuncionario=15000\n",
+        "vendasloja=0\n",
+        "\n",
+        "if vendasfuncionario > metafuncionario and vendasloja > metaloja:\n",
+        "  bonus=0.03*vendasfuncionario\n",
+        "  print('Bonus do funcionário de {}'.format(bonus))\n",
+        "else:\n",
+        "  print('Funcionário não ganhou bônus')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Gd_DJpDD5ct7",
+        "outputId": "e4755b73-4c80-4135-ae63-cefa7526bdbf"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Funcionário não ganhou bônus\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#or\n",
+        "\n",
+        "metafuncionario=10000\n",
+        "metaloja=250000\n",
+        "vendasfuncionario=15000\n",
+        "vendasloja=0\n",
+        "\n",
+        "if vendasfuncionario > metafuncionario or vendasloja > metaloja:\n",
+        "  bonus=0.03*vendasfuncionario\n",
+        "  print('Bonus do funcionário de {}'.format(bonus))\n",
+        "else:\n",
+        "  print('Funcionário não ganhou bônus')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RZ1qdegp8BkN",
+        "outputId": "fcdaf4ce-608c-447d-8c14-4eb005e7397b"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Bonus do funcionário de 450.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "vendasfuncionario1=1000\n",
+        "vendasfuncionario2=770\n",
+        "vendasfuncionario3=2700\n",
+        "metavendas=1000\n",
+        "\n",
+        "if vendasfuncionario1 >= metavendas:\n",
+        "  bonus1=0.1*vendasfuncionario1\n",
+        "  print('Bonus do funcinário 1 é de R${}'.format(bonus1))\n",
+        "else: \n",
+        "    print('o funcionário 1 não atingiu a meta')\n",
+        "\n",
+        "\n",
+        "if vendasfuncionario2 >= metavendas:\n",
+        "  bonus2=0.1*vendasfuncionario2\n",
+        "  print('Bonus do funcinário 2 é de R${}'.format(bonus2))\n",
+        "else:\n",
+        "    print('o funcionário 2 não atingiu a meta')\n",
+        "\n",
+        "\n",
+        "if vendasfuncionario3 >= metavendas:\n",
+        "  bonus3=0.1*vendasfuncionario3\n",
+        "  print('Bonus do funcinário 3 é de R${}'.format(bonus3))\n",
+        "else: \n",
+        "    print('o funcionário 3 não atingiu a meta')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VVL18Yud9OlY",
+        "outputId": "3c11ce1f-108c-4d29-8dee-291a83cd880d"
+      },
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Bonus do funcinário 1 é de R$100.0\n",
+            "o funcionário 2 não atingiu a meta\n",
+            "Bonus do funcinário 3 é de R$270.0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
